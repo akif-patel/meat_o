@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@mipmap/background"
+    tools:context="com.patel.akif.meat_o.ActivitySplash">
+    <LinearLayout
+        android:id="@+id/login_view_products"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp">
+        <ImageView
+            style="@style/MeatO_Image_Product_Login"
+            android:src="@mipmap/mutton"/>
+
+        <ImageView
+            style="@style/MeatO_Image_Product_Login"
+            android:src="@mipmap/chicken"/>
+
+        <ImageView
+            style="@style/MeatO_Image_Product_Login"
+            android:src="@mipmap/ingredients"/>
+
+        <ImageView
+            style="@style/MeatO_Image_Product_Login"
+            android:src="@mipmap/spices"/>
+
+        <ImageView
+            style="@style/MeatO_Image_Product_Login"
+            android:src="@mipmap/dessert"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/vegan_food_filled"
+            android:tint="@color/colorWhite"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            style="@style/MeatO_TextView.Title.CenterAligned"
+            android:textColor="@color/colorWhite"
+            android:text="@string/app_name"
+            android:textSize="40dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorWhite"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            style="@style/MeatO_TextView.CenterAligned"
+            android:textColor="@color/colorWhite"
+            android:text="@string/app_slogan"/>
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:indeterminate="true"
+            android:indeterminateBehavior="cycle"
+            android:indeterminateOnly="true"
+            android:progressTint="@color/colorWhite"
+            android:indeterminateTint="@color/colorWhite"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            style="@style/MeatO_TextView.CenterAligned"
+            android:textColor="@color/colorWhite"
+            android:text="@string/message_wait_loading"/>
+    </LinearLayout>
+
+    <TextView
+        style="@style/MeatO_TextView.CenterAligned"
+        android:textColor="@color/colorWhite"
+        android:text="@string/title_activity_splash"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

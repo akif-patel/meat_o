@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Login Verify Screen -->
+    <string name="alert_login_title">Registration</string>
+    <string name="alert_login_invalid_phone">Mobile Number entered is not valid.\nPlease verify yourself with a valid Mobile Number.</string>
+    <string name="alert_login_phone_not_verified">Please verify yourself with a valid Mobile Number to complete registration.</string>
+    <string name="alert_login_invalid_otp">Oops! This OTP is not valid.</string>
+
+    <!-- Add Address Screen -->
+    <string name="alert_address_short_address">Ohh! The Delivery Address you have entered is too short.\nPlease enter your complete delivery address to serve you better and faster.</string>
+    <string name="alert_address_invalid_pin">The Pin Code you have entered is not valid.</string>
+</resources>

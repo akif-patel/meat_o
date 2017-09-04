@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_dialog_add_to_basket"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/basket_text_item_name"
+        style="@style/MeatO_TextView.Title.CenterAligned"
+        android:text="Mutton Curry Cut"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="10dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+
+    <RelativeLayout
+        android:id="@+id/basket_view_item_brand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:visibility="gone">
+        <TextView
+            style="@style/MeatO_TextView.Large"
+            android:text="Brand"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/basket_text_item_brand"
+            style="@style/MeatO_TextView.Large"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorViewBackground">
+        <TextView
+            android:id="@+id/basket_text_item_rate"
+            style="@style/MeatO_TextView.Large"
+            android:text="Rate (1 Kilogram)"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/basket_text_item_price"
+            style="@style/MeatO_TextView.Large"
+            android:text="Rs. 500/-"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+        <TextView
+            style="@style/MeatO_TextView.Large"
+            android:text="Quantity"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/basket_text_item_sale_unit"
+            style="@style/MeatO_TextView.Large"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+        <Spinner
+            android:id="@+id/basket_spinner_item_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:padding="0dp"
+            android:background="@drawable/ic_spinner_dropdown"
+            android:layout_toLeftOf="@id/basket_text_item_sale_unit"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/colorViewBackground">
+        <TextView
+            style="@style/MeatO_TextView.RateLabel"
+            android:text="Total Amount"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"/>
+
+        <TextView
+            android:id="@+id/basket_text_total_amount"
+            style="@style/MeatO_TextView.RateLabel"
+            android:text="Rs. 800/-"
+            android:layout_alignParentRight="true"
+            android:gravity="right"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorAccent"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:id="@+id/basket_button_add"
+            style="@style/MeatO_Button_Flat_Text"
+            android:text="Add to Basket"
+            android:textSize="@dimen/app_text_size_large"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/basket_button_cancel"
+            style="@style/MeatO_Button_Flat_Text"
+            android:text="Cancel"
+            android:textSize="@dimen/app_text_size_large"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+</LinearLayout>

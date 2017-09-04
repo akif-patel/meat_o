@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="48dp"
+    android:layout_height="@dimen/app_action_bar_size"
+    android:clickable="true"
+    style="@style/SelectableItemBackgroundWhite">
+
+    <ImageView
+        android:id="@+id/nav_action_basket_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@mipmap/ic_shopping_basket_black_48dp"
+        android:tint="@color/colorWhite"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/nav_action_basket_label"
+        style="@style/MeatO_TextView.Small.CenterAligned"
+        android:text="@string/menu_action_basket"
+        android:layout_below="@id/nav_action_basket_image"
+        android:textColor="@color/colorWhite"/>
+
+    <TextView
+        android:id="@+id/nav_action_basket_counter"
+        style="@style/MeatO_TextView.Small"
+        android:text="0"
+        android:layout_above="@id/nav_action_basket_image"
+        android:layout_toRightOf="@id/nav_action_basket_image"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"/>
+</RelativeLayout>

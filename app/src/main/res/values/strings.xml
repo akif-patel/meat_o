@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">Meat-O</string>
+    <string name="app_slogan">mobile meat shop</string>
+    <string name="app_google_client_id">84170093588-479tbrbqg6oj3tta9718mnhs20g3tu5d.apps.googleusercontent.com</string>
+    <string name="app_google_auth_code">84170093588-fq30rltus4p680440hdc2bg7btjn9jo9.apps.googleusercontent.com</string>
+
+    <!-- Messages -->
+    <string name="message_rate_vary">This rate is for the current location. Rate may vary by location.</string>
+    <string name="message_wait_loading">Loading, please wait...</string>
+    <string name="message_wait_fetching_products">Fetching products, please wait...</string>
+    <string name="message_wait_auth">Authenticating, please wait...</string>
+    <string name="message_wait_register">Registering yourself...</string>
+
+    <!-- Common -->
+    <string name="text_button_close">Close</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="button_back">Back</string>
+
+    <!-- Tags -->
+    <string name="tag_title">title</string>
+    <string name="tag_bold">bold</string>
+    <string name="tag_header">header</string>
+
+    <!-- Fonts -->
+    <string name="app_font">GlametrixBold.otf</string>
+    <string name="app_font_title">GlametrixBold.otf</string>
+    <string name="app_font_header">ChauPhilomeneOne-Regular.ttf</string>
+    <string name="app_font_mono">MONOSPACE</string>
+
+    <!-- Menus -->
+    <string name="menu_addresses">My Addresses</string>
+    <string name="menu_orders">My Orders</string>
+    <string name="menu_fav">My Favorites</string>
+    <string name="menu_basket">Quick Baskets</string>
+    <string name="menu_action_basket">Basket</string>
+    <string name="menu_alerts">Alerts &amp; Notifications</string>
+    <string name="menu_rate">Rate Us</string>
+    <string name="menu_feedback">Feedback \\ Contact Us</string>
+    <string name="menu_share">Share</string>
+    <string name="label_header_welcome">Welcome,</string>
+    <string name="label_header_guest">Guest,</string>
+
+    <!-- Order Statuses -->
+    <string name="order_status">Order Status</string>
+    <string name="order_summary">Summary:</string>
+    <string name="order_status_waiting">(waiting)</string>
+    <string name="order_status_confirming">Confirming</string>
+    <string name="order_status_confirmed">Confirmed</string>
+    <string name="order_status_preparing">Preparing</string>
+    <string name="order_status_prepared">Prepared</string>
+    <string name="order_status_delivering">Delivering</string>
+    <string name="order_status_delivered">Delivered</string>
+    <string name="order_status_returned">Returned</string>
+
+    <!-- Products -->
+    <string name="label_products">Products</string>
+    <string name="label_products_slogan">everything you need for your delicious meal</string>
+    <string name="label_products_goat">Goat Meat</string>
+    <string name="label_products_chicken">Chicken</string>
+    <string name="label_products_spices">Spices</string>
+    <string name="label_products_ingredients">Ingredients</string>
+    <string name="label_products_dessert">Desserts</string>
+
+    <!-- Home Screen -->
+    <string name="label_feature_hygienic">Hygienic</string>
+    <string name="label_feature_halal">Halal</string>
+    <string name="label_feature_fresh">Farm Fresh</string>
+    <string name="label_feature_delivery">Home Delivery</string>
+    <string name="label_home_todays_rate">Today\'s Rate</string>
+    <string name="label_home_trending_recipes">Trending Recipes</string>
+    <string name="button_home_order_action_cancel_modify">Modify\\Cancel</string>
+
+    <!-- Login Screen -->
+    <string name="button_login_google_sign_in">Sign-In with Google</string>
+
+    <!-- Login Verify Screen -->
+    <string name="label_login_first_name">First Name *</string>
+    <string name="label_login_last_name">Last Name *</string>
+    <string name="label_login_email">E-Mail Address *</string>
+    <string name="label_login_mobile">Mobile Number (+91) *</string>
+    <string name="button_login_verify">Verify</string>
+    <string name="button_login_add_address">Add a Delivery Address</string>
+    <string name="message_login_pending_verification">Pending verification</string>
+    <string name="message_login_verified_phone">Verified mobile number</string>
+    <string name="message_login_invalid_phone">Invalid mobile number</string>
+
+    <!-- Add Address Screen -->
+    <string name="label_address_line_1">Flat\\House No., Building\\House Name *</string>
+    <string name="label_address_line_2">Locality\\Area Name *</string>
+    <string name="label_address_line_3">Landmark</string>
+    <string name="label_address_line_pin">PIN Code *</string>
+    <string name="label_address_line_city">City *</string>
+    <string name="label_address_line_state">State *</string>
+    <string name="button_address_save">Save &amp; Proceed</string>
+    <string name="default_state">Maharashtra</string>
+    <string name="default_city">Mira Bhayandar</string>
+
+    <!-- Profile Screen -->
+    <string name="button_profile_change">Change</string>
+</resources>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content_activity_profile"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    tools:context="com.patel.akif.meat_o.ActivityProfile">
+
+    <include layout="@layout/view_app_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_below="@id/view_toolbar">
+        <!--<android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true"
+            app:cardPreventCornerOverlap="true"
+            android:background="@color/colorWhite">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/MeatO_TextView.CardHeader"
+                        android:text="Personal Information"/>
+
+                    <ImageView
+                        style="@style/MeatO_Image_Card_Indicator"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorViewBackground"
+                    android:layout_alignParentBottom="true"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:orientation="vertical">
+            <com.patel.akif.meat_o.controls.ValidatorTextInput
+                android:id="@+id/profile_text_first_name"
+                style="@style/MeatO_TextInput"
+                app:hint="@string/label_login_first_name"
+                app:showValidator="false"
+                app:inputType="PersonName"
+                app:readOnly="true"/>
+
+            <com.patel.akif.meat_o.controls.ValidatorTextInput
+                android:id="@+id/profile_text_last_name"
+                app:hint="@string/label_login_last_name"
+                app:inputType="PersonName"
+                app:showValidator="false"
+                app:readOnly="true"
+                style="@style/MeatO_TextInput"
+                android:layout_marginBottom="10dp"/>
+
+            <com.patel.akif.meat_o.controls.ValidatorTextInput
+                android:id="@+id/profile_text_email_address"
+                app:hint="@string/label_login_email"
+                app:inputType="Email"
+                app:showValidator="false"
+                app:readOnly="true"
+                style="@style/MeatO_TextInput"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/profile_button_verify_phone"
+                    style="@style/MeatO_Button_Flat_Text"
+                    android:layout_width="70dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/button_profile_change"
+                    android:padding="10dp"
+                    android:layout_marginRight="13dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"/>
+
+                <com.patel.akif.meat_o.controls.ValidatorTextInput
+                    android:id="@+id/profile_text_phone"
+                    app:hint="@string/label_login_mobile"
+                    app:readOnly="true"
+                    app:inputType="Phone"
+                    app:defaultErrorMsg="@string/message_login_verified_phone"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/profile_button_verify_phone"
+                    style="@style/MeatO_TextInput"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:elevation="5dp"
+        android:layout_margin="5dp">
+        <LinearLayout
+            android:id="@+id/profile_button_back"
+            style="@style/MeatO_View_Button_Scaled.Dark">
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@mipmap/ic_arrow_back_black_48dp"
+                android:layout_margin="10dp"
+                android:clickable="false"
+                android:tint="@color/colorWhite"/>
+            <View
+                style="@style/MeatO_View_Vertical_Divider"
+                android:background="@color/colorWhite"/>
+            <TextView
+                style="@style/MeatO_TextView.Title.CenterAligned"
+                android:text="@string/button_back"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

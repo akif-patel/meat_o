@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#DB4537</color>
+    <color name="colorPrimaryDark">#AE352A</color>
+    <!--<color name="colorAccent">#AE352A</color>-->
+    <color name="colorAccent">#707070</color>
+    <color name="colorAccentHeader">#606060</color>
+    <color name="colorAccentGreyed">#909090</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorOffWhite">#CCC</color>
+    <color name="colorShadow">#531710</color>
+    <color name="colorViewBackground">#EEEEEE</color>
+    <color name="colorGrey">#B0B0B0</color>
+    <color name="colorSlogan">#DDD</color>
+    <color name="colorValidText">#009400</color>
+    <color name="colorInvalidText">#FF0000</color>
+</resources>

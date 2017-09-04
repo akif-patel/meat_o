@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="product_codes">
+        <item>MTN</item>
+        <item>CKN</item>
+        <item>ING</item>
+        <item>SPC</item>
+        <item>DST</item>
+    </string-array>
+
+    <string-array name="mutton_order_quantities">
+        <item>0.25</item>
+        <item>0.50</item>
+        <item>0.75</item>
+        <item>1.00</item>
+        <item>1.25</item>
+        <item>1.50</item>
+        <item>2.00</item>
+        <item>2.50</item>
+        <item>3.00</item>
+        <item>4.00</item>
+        <item>5.00</item>
+        <item>6.00</item>
+        <item>7.00</item>
+        <item>8.00</item>
+        <item>9.00</item>
+        <item>10.0</item>
+    </string-array>
+
+    <string-array name="chicken_order_quantities">
+        <item>1.00</item>
+        <item>1.50</item>
+        <item>2.00</item>
+        <item>2.50</item>
+        <item>3.00</item>
+        <item>3.50</item>
+        <item>4.00</item>
+        <item>5.00</item>
+        <item>6.00</item>
+        <item>7.00</item>
+        <item>8.00</item>
+        <item>9.00</item>
+        <item>10.0</item>
+    </string-array>
+
+    <string-array name="gram_order_quantities">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>400</item>
+        <item>500</item>
+        <item>1000</item>
+    </string-array>
+
+    <string-array name="numeric_order_quantities">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+</resources>

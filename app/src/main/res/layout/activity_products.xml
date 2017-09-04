@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_products"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.patel.akif.meat_o.ActivityProducts">
+
+    <include layout="@layout/view_app_bar" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/products_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/colorPrimary"
+        app:tabTextColor="@color/colorAccent"
+        app:tabSelectedTextColor="@color/colorPrimary"
+        android:layout_below="@+id/view_toolbar"
+        app:tabTextAppearance="@style/MeatO_TextView.Large"
+        app:tabMode="scrollable"
+        android:elevation="2dp">
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_products_goat"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_products_chicken"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_products_spices"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_products_ingredients"/>
+
+        <android.support.design.widget.TabItem
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/label_products_dessert"/>
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/products_pager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_below="@id/products_tabs"
+        android:background="@color/colorViewBackground"
+        android:padding="5dp"/>
+
+</RelativeLayout>

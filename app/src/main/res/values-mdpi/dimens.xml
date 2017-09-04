@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="app_text_size_small">20dp</dimen>
+    <dimen name="app_text_size">25dp</dimen>
+    <dimen name="app_text_size_large">30dp</dimen>
+    <dimen name="app_text_size_header">20dp</dimen>
+    <dimen name="app_text_size_title">31dp</dimen>
+
+    <dimen name="design_navigation_icon_size" tools:override="true">20dp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">18dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">5dp</dimen>
+    <dimen name="design_navigation_padding_bottom" tools:override="true">8dp</dimen>
+    <dimen name="design_appbar_elevation" tools:override="true">0dp</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav" tools:override="true">0dp</dimen>
+</resources>

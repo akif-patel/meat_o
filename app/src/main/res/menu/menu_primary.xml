@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="none" android:id="@+id/menu_primary_user">
+        <item
+            android:id="@+id/nav_addresses"
+            android:title="@string/menu_addresses"
+            android:icon="@mipmap/ic_map_black_48dp"/>
+        <item
+            android:id="@+id/nav_orders"
+            android:title="@string/menu_orders"
+            android:icon="@mipmap/ic_style_black_48dp"/>
+        <item
+            android:id="@+id/nav_fav"
+            android:title="@string/menu_fav"
+            android:icon="@mipmap/ic_loyalty_black_48dp"/>
+        <item
+            android:id="@+id/nav_quick_bag"
+            android:title="@string/menu_basket"
+            android:icon="@mipmap/ic_shopping_basket_black_48dp"/>
+        <item
+            android:id="@+id/nav_alerts"
+            android:title="@string/menu_alerts"
+            android:icon="@mipmap/ic_notifications_active_black_48dp"/>
+    </group>
+
+    <group android:checkableBehavior="none" android:id="@+id/menu_primary_app">
+        <item
+            android:id="@+id/menu_contact"
+            android:title="@string/menu_feedback"
+            android:icon="@mipmap/ic_rate_review_black_48dp"/>
+        <item
+            android:id="@+id/menu_rate"
+            android:icon="@mipmap/ic_stars_black_48dp"
+            android:title="@string/menu_rate" />
+        <item
+            android:id="@+id/menu_share"
+            android:title="@string/menu_share"
+            android:icon="@mipmap/ic_share_black_48dp"/>
+    </group>
+
+</menu>

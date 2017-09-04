@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_action_basket"
+        android:title="@string/menu_action_basket"
+        app:showAsAction="always"
+        android:actionLayout="@layout/view_action_basket"/>
+</menu>

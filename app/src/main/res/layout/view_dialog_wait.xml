@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_wait_dialog"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:gravity="center">
+
+    <ProgressBar
+        android:id="@+id/wait_progress_bar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:indeterminate="true"
+        android:indeterminateBehavior="cycle"
+        android:indeterminateOnly="true"
+        android:progressTint="@color/colorPrimaryDark"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:layout_marginRight="20dp"/>
+
+    <TextView
+        android:id="@+id/wait_text_message"
+        style="@style/MeatO_TextView.Title.CenterAligned"/>
+</LinearLayout>

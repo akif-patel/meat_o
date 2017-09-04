@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_activity_splash">Every need of a Delicious Meal</string>
+
+    <string name="title_activity_login">Quick Login</string>
+
+    <string name="title_activity_login_welcome">Welcome to Quick &amp; Secure Sign-In</string>
+    <string name="title_activity_login_verify">Let\'s verify yourself</string>
+    <string name="title_activity_login_add_address">Add a Delivery Address</string>
+
+    <string name="title_activity_products">Products</string>
+
+    <string name="title_activity_profile">Your Profile</string>
+    <string name="title_activity_profile_slogan">information which identifies yourself</string>
+</resources>

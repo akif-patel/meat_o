@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "84170093588",
+    "project_id": "meat-o"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:84170093588:android:baa46e97aa424e49",
+        "android_client_info": {
+          "package_name": "com.patel.akif.meat_o"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "84170093588-7lu7j2p4n0bvslu7q0iujl8lj4j360rm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.patel.akif.meat_o",
+            "certificate_hash": "a3f66a707e4a6e46f3c215f92fef7eead6aad944"
+          }
+        },
+        {
+          "client_id": "84170093588-fq30rltus4p680440hdc2bg7btjn9jo9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxYztp92rThCf9tl5JUDUiIyBIodFO5dk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

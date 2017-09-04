@@ -1,0 +1,319 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/MeatO_DrawerArrowStyle</item>
+        <item name="android:actionOverflowButtonStyle">@style/MeatO_DrawerArrowStyle</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/colorPrimary</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="SelectableItemThemeWhite">
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="SelectableItemBackgroundWhite">
+        <item name="android:theme">@style/SelectableItemThemeWhite</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="MeatO_Anim_Alert_UpRight">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_right</item>
+    </style>
+
+    <style name="MeatO_NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:listDivider">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccentHeader</item>
+    </style>
+
+    <style name="MeatO_DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/colorWhite</item>
+    </style>
+
+    <style name="MeatO_TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="MeatO_TextView.CenterAligned" parent="MeatO_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">gravity</item>
+    </style>
+
+    <style name="MeatO_TextView.Header.CenterAligned" parent="MeatO_TextView.CenterAligned">
+        <item name="android:textColor">@color/colorAccentHeader</item>
+        <item name="android:textSize">@dimen/app_text_size_header</item>
+        <item name="android:tag">@string/tag_title</item>
+    </style>
+
+    <style name="MeatO_TextView.Header" parent="MeatO_TextView">
+        <item name="android:textColor">@color/colorAccentHeader</item>
+        <item name="android:textSize">@dimen/app_text_size_header</item>
+        <item name="android:tag">@string/tag_title</item>
+    </style>
+
+    <style name="MeatO_TextView.Title" parent="MeatO_TextView">
+        <item name="android:textSize">@dimen/app_text_size_title</item>
+    </style>
+
+    <style name="MeatO_TextView.Title.CenterAligned" parent="MeatO_TextView.CenterAligned">
+        <item name="android:textSize">@dimen/app_text_size_title</item>
+    </style>
+
+    <style name="MeatO_TextView.Small" parent="MeatO_TextView">
+        <item name="android:textSize">@dimen/app_text_size_small</item>
+    </style>
+
+    <style name="MeatO_TextView.Small.CenterAligned" parent="MeatO_TextView.CenterAligned">
+        <item name="android:textSize">@dimen/app_text_size_small</item>
+    </style>
+
+    <style name="MeatO_TextView.OrderStatus" parent="MeatO_TextView.CenterAligned">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:textSize">@dimen/app_text_size_small</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/colorAccentGreyed</item>
+        <item name="android:gravity">top|center_horizontal</item>
+    </style>
+
+    <style name="MeatO_TextView.ProductLabel" parent="MeatO_TextView.CenterAligned">
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MeatO_TextView.RateLabel" parent="MeatO_TextView.CenterAligned">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/app_text_size_large</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MeatO_TextView.CardHeader" parent="MeatO_TextView.Title">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <style name="MeatO_TextView.Large" parent="MeatO_TextView">
+        <item name="android:textSize">@dimen/app_text_size_large</item>
+    </style>
+
+    <style name="MeatO_TextInput_EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/app_text_size_title</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <style name="MeatO_TextInput_EditText.Light" parent="MeatO_TextInput_EditText">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorOffWhite</item>
+        <item name="android:backgroundTint">@color/colorOffWhite</item>
+    </style>
+
+    <style name="MeatO_TextInput_EditText_Theme">
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MeatO_TextInput_EditText_Theme.Light">
+        <item name="colorControlNormal">@color/colorOffWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <style name="MeatO_TextInput_Layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColorHint">@color/colorAccentGreyed</item>
+        <item name="android:textSize">@dimen/app_text_size</item>
+    </style>
+
+    <style name="MeatO_TextInput_Layout.Light" parent="MeatO_TextInput_Layout">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textColorHint">@color/colorOffWhite</item>
+    </style>
+
+    <style name="MeatO_Hint_TextAppearance" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:textColor">@color/colorAccentGreyed</item>
+    </style>
+
+    <style name="MeatO_Hint_TextAppearance_Light" parent="android:TextAppearance">
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:textColor">@color/colorOffWhite</item>
+        <item name="android:textColorHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="MeatO_TextInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">7dp</item>
+        <item name="android:paddingRight">7dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="MeatO_View_StatusTransition">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/colorGrey</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginLeft">-10dp</item>
+        <item name="android:layout_marginRight">-10dp</item>
+    </style>
+
+    <style name="MeatO_Button_Flat" parent="SelectableItemBackground">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:clickable">true</item>
+        <item name="background">@color/colorWhite</item>
+    </style>
+    <style name="MeatO_Button_Flat.Dark" parent="SelectableItemBackgroundWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MeatO_Button_Flat_Image" parent="MeatO_Button_Flat">
+        <item name="android:padding">3dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="MeatO_Button_Flat_Image.Dark" parent="MeatO_Button_Flat.Dark">
+        <item name="android:padding">3dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="MeatO_Button_Flat_Text" parent="MeatO_Button_Flat">
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+    </style>
+    <style name="MeatO_Button_Flat_Text.Dark" parent="MeatO_Button_Flat.Dark">
+        <item name="android:textSize">@dimen/app_text_size</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MeatO_Image_Product">
+        <item name="android:layout_width">@dimen/image_product_size</item>
+        <item name="android:layout_height">@dimen/image_product_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:tint">@color/colorPrimary</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="MeatO_Image_Product_Login">
+        <item name="android:layout_width">@dimen/image_product_login_size</item>
+        <item name="android:layout_height">@dimen/image_product_login_size</item>
+        <item name="android:tint">@color/colorWhite</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="MeatO_View_Product" parent="SelectableItemBackground">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="MeatO_View_Vertical_Divider">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MeatO_View_Vertical_Separator">
+        <item name="android:layout_width">1px</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MeatO_Image_Feature">
+        <item name="android:layout_width">@dimen/image_feature_size</item>
+        <item name="android:layout_height">@dimen/image_feature_size</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+
+    <style name="MeatO_View_Feature">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MeatO_Image_Order_Status">
+        <item name="android:layout_width">16dp</item>
+        <item name="android:layout_height">16dp</item>
+        <item name="android:tint">@color/colorAccentGreyed</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+
+    <style name="MeatO_View_Button_Scaled" parent="MeatO_Button_Flat">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="MeatO_View_Button_Scaled.Dark" parent="SelectableItemBackgroundWhite">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="background">@color/colorPrimary</item>
+    </style>
+
+    <style name="MeatO_Image_Card_Indicator">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:src">@mipmap/ic_expand_less_black_48dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:tint">@color/colorPrimary</item>
+    </style>
+</resources>

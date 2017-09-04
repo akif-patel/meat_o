@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/view_nav_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_action_bar_size"
+        android:background="@color/colorPrimaryDark"
+        android:padding="10dp">
+
+        <TextView android:id="@+id/nav_header_text_user_name"
+            style="@style/MeatO_TextView"
+            android:text="Guest"
+            android:textColor="@color/colorWhite"
+            android:shadowDy="3" android:shadowDx="3"
+            android:shadowRadius="5" android:shadowColor="@color/colorShadow"
+            android:layout_alignParentBottom="true"/>
+
+        <TextView android:id="@+id/nav_header_label_welcome"
+            style="@style/MeatO_TextView.Small"
+            android:textColor="@color/colorWhite"
+            android:text="@string/label_header_welcome"
+            android:layout_above="@id/nav_header_text_user_name"/>
+
+        <LinearLayout
+            android:id="@+id/nav_header_button_edit_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:padding="5dp"
+            style="@style/MeatO_Button_Flat_Image.Dark">
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@mipmap/edit_user"
+                android:tint="@color/colorWhite"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_action_bar_size"
+        android:background="@color/colorPrimary"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/nav_header_image_location"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/ic_pin_drop_black_48dp"
+            android:tint="@color/colorWhite"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/nav_header_image_location">
+            <TextView android:id="@+id/nav_header_text_zip"
+                style="@style/MeatO_TextView.Small"
+                android:textColor="@color/colorWhite"
+                android:text="@string/label_header_welcome"/>
+
+            <TextView android:id="@+id/nav_header_text_location"
+                style="@style/MeatO_TextView"
+                android:text="@string/label_header_guest"
+                android:textColor="@color/colorWhite"
+                android:shadowDy="3" android:shadowDx="3"
+                android:shadowRadius="5" android:shadowColor="@color/colorShadow"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

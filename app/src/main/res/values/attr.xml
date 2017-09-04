@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ValidatorTextInput">
+        <attr name="useLightTheme" format="boolean" />
+        <attr name="showValidator" format="boolean" />
+        <attr name="validTint" format="color"/>
+        <attr name="invalidTint" format="color"/>
+        <attr name="hint" format="string"/>
+        <attr name="defaultErrorMsg" format="string"/>
+        <attr name="maxLines" format="integer"/>
+        <attr name="readOnly" format="boolean"/>
+        <attr name="inputType" format="enum">
+            <enum name="Text" value="1" />
+            <enum name="DateTime" value="4"/>
+            <enum name="Number" value="2"/>
+            <enum name="Phone" value="3"/>
+            <enum name="OnlyDate" value="16"/>
+            <enum name="NormalDate" value="0"/>
+            <enum name="Time" value="32"/>
+            <enum name="Email" value="32"/>
+            <enum name="Password" value="128"/>
+            <enum name="PersonName" value="96"/>
+            <enum name="Address" value="112"/>
+        </attr>
+    </declare-styleable>
+</resources>

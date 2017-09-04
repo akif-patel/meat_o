@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    app:cardCornerRadius="2dp"
+    app:cardUseCompatPadding="true"
+    app:cardPreventCornerOverlap="true"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/product_item_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/item_mutton"
+            android:layout_margin="2dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/product_item_text_name"
+                style="@style/MeatO_TextView.RateLabel"
+                android:text="Mutton Curry Cut"
+                android:gravity="left"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/product_item_text_brand"
+                style="@style/MeatO_TextView.RateLabel"
+                android:gravity="right"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/product_item_text_desc"
+                style="@style/MeatO_TextView.Small"
+                android:text="Goat's meat cleaned &amp; precisely cut for a perfect curry weighted approximately as per the order"
+                android:lines="2"
+                android:layout_below="@id/product_item_text_name"/>
+
+            <TextView
+                android:id="@+id/product_item_button_add"
+                style="@style/MeatO_Button_Flat_Text"
+                android:text="Add to Basket"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:id="@+id/product_item_text_status"
+                style="@style/MeatO_TextView.Small"
+                android:text="Available"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/product_item_text_rate"
+                style="@style/MeatO_TextView.Large"
+                android:text="Rate"
+                android:layout_above="@id/product_item_button_add"/>
+
+            <TextView
+                android:id="@+id/product_item_text_price"
+                style="@style/MeatO_TextView.Large"
+                android:text="Rs. 500/Kilogram"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/product_item_button_add"/>
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

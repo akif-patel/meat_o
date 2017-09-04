@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_view_products"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:background="@color/colorWhite">
+    <LinearLayout
+        android:id="@+id/home_view_products_goat"
+        style="@style/MeatO_View_Product">
+        <ImageView
+            style="@style/MeatO_Image_Product"
+            android:src="@mipmap/mutton"/>
+
+        <TextView
+            style="@style/MeatO_TextView.ProductLabel"
+            android:text="@string/label_products_goat"/>
+    </LinearLayout>
+    <View
+        style="@style/MeatO_View_Vertical_Divider"/>
+
+    <LinearLayout
+        android:id="@+id/home_view_products_chicken"
+        style="@style/MeatO_View_Product">
+        <ImageView
+            style="@style/MeatO_Image_Product"
+            android:src="@mipmap/chicken"/>
+
+        <TextView
+            style="@style/MeatO_TextView.ProductLabel"
+            android:text="@string/label_products_chicken"/>
+    </LinearLayout>
+    <View
+        style="@style/MeatO_View_Vertical_Divider" />
+
+    <LinearLayout
+        android:id="@+id/home_view_products_ingredients"
+        style="@style/MeatO_View_Product">
+        <ImageView
+            style="@style/MeatO_Image_Product"
+            android:src="@mipmap/ingredients"/>
+
+        <TextView
+            style="@style/MeatO_TextView.ProductLabel"
+            android:text="@string/label_products_ingredients"/>
+    </LinearLayout>
+    <View
+        style="@style/MeatO_View_Vertical_Divider" />
+
+    <LinearLayout
+        android:id="@+id/home_view_products_spices"
+        style="@style/MeatO_View_Product">
+        <ImageView
+            style="@style/MeatO_Image_Product"
+            android:src="@mipmap/spices"/>
+
+        <TextView
+            style="@style/MeatO_TextView.ProductLabel"
+            android:text="@string/label_products_spices"/>
+    </LinearLayout>
+    <View
+        style="@style/MeatO_View_Vertical_Divider" />
+
+    <LinearLayout
+        android:id="@+id/home_view_products_desserts"
+        style="@style/MeatO_View_Product">
+        <ImageView
+            style="@style/MeatO_Image_Product"
+            android:src="@mipmap/dessert"/>
+
+        <TextView
+            style="@style/MeatO_TextView.ProductLabel"
+            android:text="@string/label_products_dessert"/>
+    </LinearLayout>
+</LinearLayout>

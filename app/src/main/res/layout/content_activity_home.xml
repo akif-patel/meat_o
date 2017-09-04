@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_view_home"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/app_action_bar_size"
+    tools:context="com.patel.akif.meat_o.ActivityHome"
+    tools:showIn="@layout/view_activity_app_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorViewBackground">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Products -->
+            <include layout="@layout/view_home_products" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/colorPrimaryDark"/>
+
+            <!-- Features -->
+            <include layout="@layout/view_home_features" />
+
+            <!-- Today's Rate -->
+            <include layout="@layout/view_home_rate" />
+
+            <!-- Order Status -->
+            <include layout="@layout/view_home_order_status" />
+
+            <!-- Recipes -->
+            <include layout="@layout/view_home_recipe" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

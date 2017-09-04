@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_view_order_status"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:paddingBottom="0dp"
+    android:layout_marginBottom="@dimen/home_section_seperator_space"
+    android:background="@color/colorWhite">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/home_label_order_status"
+            style="@style/MeatO_TextView.Header"
+            android:text="@string/order_status"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            style="@style/MeatO_Button_Flat_Image">
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@mipmap/ic_phone_in_talk_black_48dp"
+                android:tint="@color/colorPrimary"/>
+
+            <TextView
+                style="@style/MeatO_TextView.Small"
+                android:text="Helpdesk"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/home_text_order_summary"
+            style="@style/MeatO_TextView"
+            android:text="Mutton | 1 KG, Chicken | 0.5 KG"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/home_text_order_amount"
+            style="@style/MeatO_TextView"
+            android:text="Amount: Rs. 500/-"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/home_view_order_status_stage_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true">
+            <ImageView
+                android:id="@+id/home_image_order_stage_1"
+                android:src="@mipmap/ic_perm_phone_msg_black_48dp"
+                style="@style/MeatO_Image_Order_Status"/>
+
+            <TextView
+                android:id="@+id/home_text_order_stage_1"
+                style="@style/MeatO_TextView.OrderStatus"
+                android:text="@string/order_status_waiting"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_view_order_status_stage_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/home_image_order_stage_2"
+                android:src="@mipmap/ic_gavel_black_48dp"
+                style="@style/MeatO_Image_Order_Status"/>
+
+            <TextView
+                android:id="@+id/home_text_order_stage_2"
+                style="@style/MeatO_TextView.OrderStatus"
+                android:text="@string/order_status_waiting"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_view_order_status_stage_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentRight="true">
+            <ImageView
+                android:id="@+id/home_image_order_stage_3"
+                android:src="@mipmap/ic_local_shipping_black_48dp"
+                style="@style/MeatO_Image_Order_Status"/>
+
+            <TextView
+                android:id="@+id/home_text_order_stage_3"
+                style="@style/MeatO_TextView.OrderStatus"
+                android:text="@string/order_status_waiting"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/home_view_order_stage_1"
+            style="@style/MeatO_View_StatusTransition"
+            android:layout_toRightOf="@id/home_view_order_status_stage_1"
+            android:layout_toLeftOf="@id/home_view_order_status_stage_2"/>
+        <View
+            android:id="@+id/home_view_order_stage_2"
+            style="@style/MeatO_View_StatusTransition"
+            android:layout_toRightOf="@id/home_view_order_status_stage_2"
+            android:layout_toLeftOf="@id/home_view_order_status_stage_3"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_view_order_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/home_text_order_expected_delivery"
+            style="@style/MeatO_TextView"
+            android:text="Expected Delivery: Today, 03:15 PM"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"/>
+
+        <TextView
+            style="@style/MeatO_Button_Flat_Text"
+            android:id="@+id/home_button_order_action"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/button_home_order_action_cancel_modify"/>
+    </RelativeLayout>
+</LinearLayout>

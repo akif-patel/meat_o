@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:layout_marginBottom="@dimen/home_section_seperator_space">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="500px"
+        android:src="@mipmap/banner_1"
+        android:scaleType="fitXY"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:id="@+id/home_view_features"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            style="@style/MeatO_View_Feature">
+            <ImageView
+                style="@style/MeatO_Image_Feature"
+                android:src="@mipmap/farm_filled"/>
+
+            <TextView
+                style="@style/MeatO_TextView.ProductLabel"
+                android:text="@string/label_feature_fresh"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MeatO_View_Feature">
+            <ImageView
+                style="@style/MeatO_Image_Feature"
+                android:src="@mipmap/heart_filled"/>
+
+            <TextView
+                style="@style/MeatO_TextView.ProductLabel"
+                android:text="@string/label_feature_hygienic"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MeatO_View_Feature">
+            <ImageView
+                style="@style/MeatO_Image_Feature"
+                android:src="@mipmap/knife_filled"/>
+
+            <TextView
+                style="@style/MeatO_TextView.ProductLabel"
+                android:text="@string/label_feature_halal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/MeatO_View_Feature">
+            <ImageView
+                style="@style/MeatO_Image_Feature"
+                android:src="@mipmap/shipping_filled"/>
+
+            <TextView
+                style="@style/MeatO_TextView.ProductLabel"
+                android:text="@string/label_feature_delivery"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

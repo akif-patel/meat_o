@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.patel.akif.meat_o.ActivityHome">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <include layout="@layout/view_app_bar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity_home" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/home_button_place_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:src="@mipmap/ic_add_shopping_cart_white_48dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        style="@style/SelectableItemBackgroundWhite"/>
+</android.support.design.widget.CoordinatorLayout>
